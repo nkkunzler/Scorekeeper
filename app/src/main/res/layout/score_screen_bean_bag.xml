@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingBottom="16dp"
+    android:paddingEnd="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:text="Team One"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneNameTextField"
+        android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:text="@string/defaultScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamOneScoreText"
+        android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/minusOneTeamOneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/minusOne"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/plusOneTeamOneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/plusOne"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/plusTwoTeamOneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/plusTwo"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/plusThreeTeamOneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/plusThree"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/plusFourTeamOneBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/plusFour"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:text="Team Two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamTwoNameTextField"
+        android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical" />
+
+    <TextView
+        android:text="@string/defaultScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/teamTwoScoreText"
+        android:layout_weight="1"
+        android:textColor="@color/textColor"
+        android:textSize="38sp"
+        android:textAlignment="center"
+        android:gravity="center_vertical" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:text="@string/minusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minusOneTeamTwoBtn"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ButtonStyle"
+            android:onClick="updateScore"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="@string/plusOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plusOneTeamTwoBtn"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ButtonStyle"
+            android:onClick="updateScore"
+            android:textSize="18sp" />
+
+        <Button
+            android:text="@string/plusTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plusTwoTeamTwoBtn"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ButtonStyle"
+            android:onClick="updateScore"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/plusThreeTeamTwoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:onClick="updateScore"
+            android:text="@string/plusThree"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:text="@string/plusFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/plusFourTeamTwoBtn"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ButtonStyle"
+            android:onClick="updateScore"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
